@@ -457,6 +457,7 @@ button:focus {
 .town {
   color: #ffffff;
   margin-bottom: 9px;
+  margin-right: 70px;
 }
 .footer-logo {
   display: block;
@@ -494,6 +495,32 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-adress-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*-------------PORTFOLIO--------*/
 .portfolio {
