@@ -189,10 +189,6 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
 }
-.button-studio:hover,
-.button-studio:focus {
-  color: #ffffff;
-}
 
 /*------------------SKILS----------------*/
 
@@ -224,18 +220,7 @@ button:focus {
   align-items: center;
   justify-content: center;
 }
-.skills-icon {
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-}
-
-.antenna {
-  width: 270px;
-  height: 120px;
-  left: 215px;
-  top: 774px;
+.skills-container {
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -244,44 +229,6 @@ button:focus {
   margin-bottom: 30px;
 }
 
-.clock {
-  width: 270px;
-  height: 120px;
-  left: 215px;
-  top: 774px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.comp {
-  width: 270px;
-  height: 120px;
-  left: 215px;
-  top: 774px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.astronaft {
-  width: 270px;
-  height: 120px;
-  left: 215px;
-  top: 774px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
 /*------------GALERY-------------------*/
 .gallery {
   padding-top: 94px;
@@ -323,8 +270,9 @@ button:focus {
 
 .team-container-text {
   padding-top: 30px;
-  /*padding-bottom: 30px;*/
+  padding-bottom: 30px;
   background-color: #fff;
+  padding-bottom: 30px;
 }
 .team-title {
   font-size: 36px;
@@ -354,7 +302,6 @@ button:focus {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-  height: 428px;
 }
 .team-text {
   font-size: 16px;
@@ -364,21 +311,16 @@ button:focus {
   color: var(--adress-lnk-color);
   margin-left: auto;
   margin-right: auto;
+
+  padding-bottom: 16px;
 }
 .team-social-list {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
-  margin-bottom: 30px;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 .team-social-item {
   list-style-type: none;
   width: 170px;
-  height: 82px;
-  left: 615px;
-  top: 2503px;
 }
 
 .team-social-item + .team-social-item {
@@ -433,18 +375,21 @@ button:focus {
   height: 82px;
   width: 170px;
 }
-.clients-link:hover {
-  color: #2196f3;
+
+.clients-item :hover,
+.clients-item :focus {
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-link:hover .clients-icon {
+  fill: #2196f3;
+}
+
+.clients-item:focus .clients-icon {
   border-color: #2196f3;
 }
-.clients-link:focus {
-  border-color: var(--link-color);
-}
-
-.clients-icon:hover {
-  fill: currentColor;
-}
-
 .clients-link {
   display: flex;
   justify-content: center;
@@ -452,12 +397,11 @@ button:focus {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  color: #afb1b8;
 }
 .clients-icon {
-  margin-top: 15px;
-  margin-right: 32px;
-  margin-bottom: 15px;
-  margin-left: 32px;
   fill: rgba(175, 177, 184, 1);
 }
 /*---------------FOOTER------------*/
@@ -469,7 +413,6 @@ button:focus {
 .town {
   color: #ffffff;
   margin-bottom: 9px;
-  margin-right: 70px;
 }
 .footer-logo {
   display: block;
@@ -516,6 +459,9 @@ button:focus {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+.footer-container {
+  margin-right: 70px;
 }
 .footer-cont {
   display: flex;
