@@ -227,6 +227,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  height: 120px;
 }
 
 /*------------GALERY-------------------*/
@@ -254,8 +255,6 @@ button:focus {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-right: 215px;
-  padding-left: 215px;
   background-color: #f5f4fa;
   margin-left: auto;
   margin-right: auto;
@@ -311,8 +310,7 @@ button:focus {
   color: var(--adress-lnk-color);
   margin-left: auto;
   margin-right: auto;
-
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .team-social-list {
   display: flex;
@@ -320,7 +318,6 @@ button:focus {
 }
 .team-social-item {
   list-style-type: none;
-  width: 170px;
 }
 
 .team-social-item + .team-social-item {
@@ -375,20 +372,13 @@ button:focus {
   height: 82px;
   width: 170px;
 }
-
-.clients-item :hover,
-.clients-item :focus {
-  border: 1px solid #2196f3;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.clients-link:hover .clients-icon {
-  fill: #2196f3;
-}
-
-.clients-item:focus .clients-icon {
+.clients-link:hover,
+.clients-link:focus {
   border-color: #2196f3;
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: #2196f3;
 }
 .clients-link {
   display: flex;
